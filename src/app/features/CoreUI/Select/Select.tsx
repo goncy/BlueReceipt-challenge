@@ -39,7 +39,7 @@ const Select: FC<Props> = forwardRef((props, ref) => {
     name,
   } = props;
   const isMulti = type === 'multi';
-  const first = selected[0];
+  const first = selected[0] || '';
 
   function handleToggle() {
     if (!disabled) {
