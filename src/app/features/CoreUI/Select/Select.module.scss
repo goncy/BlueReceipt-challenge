@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.select {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  .remove {
+    color: $red-500;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .input {
+    padding-right: 30px;
+    height: 45px;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    right: 12px;
+    transform: scale(1.2) translateY(-4px);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .item {
+    & > svg {
+      margin-right: 6px;
+    }
+  }
+}

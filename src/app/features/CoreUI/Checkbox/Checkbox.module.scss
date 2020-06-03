@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.checkbox {
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
+  cursor: pointer;
+  color: $gray-700;
+  position: relative;
+
+  &.disabled {
+    cursor: not-allowed;
+    color: $gray-300;
+  }
+
+  &.error {
+    border: 1px solid $red-600;
+    background-color: $red-100;
+  }
+
+  .control {
+    pointer-events: none;
+    height: 20px;
+  }
+
+  .hidden {
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+  }
+
+  .label {
+    margin-left: 8px;
+    line-height: 125%;
+  }
+}
